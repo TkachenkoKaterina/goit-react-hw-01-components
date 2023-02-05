@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import css from './Friends.module.css';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className="item">
+    <li className={css.item}>
       {isOnline === true ? (
-        <span className="status"></span>
+        <span className={css.statusGreen}></span>
       ) : (
-        <span className="status"></span>
+        <span className={css.statusRed}></span>
       )}
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
+      <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+      <p className={css.name}>{name}</p>
     </li>
   );
 };
@@ -17,7 +18,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default FriendListItem;
