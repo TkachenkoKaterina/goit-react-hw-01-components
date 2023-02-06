@@ -1,5 +1,5 @@
 .transactionHistory {
-    border: 1px solid rgb(221, 24, 24);
+    margin: 30px;
     table-layout: fixed;
     width: 400px;
     margin-bottom: 20px;
@@ -11,6 +11,7 @@ th {
     font-weight: bold;
     padding: 5px;
     background: #00bcd5;
+
 }
 
 td {
@@ -18,6 +19,8 @@ td {
     padding-left: 40px;
     text-align: left;
     text-transform: capitalize;
+        /* border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px; */
 }
 
 tbody tr:nth-child(odd) {
