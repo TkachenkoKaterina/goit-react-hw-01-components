@@ -13,7 +13,9 @@ export const App = () => {
     <div
       style={{
         height: '100vh',
+        backgroundColor: '#afb6b8',
         display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
