@@ -1,0 +1,24 @@
+.transaction-history {
+  width: fit-content;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-history th,
+.transaction-history td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-history th {
+  background-color: #f2f2f2;
+}
+
+.transaction-history tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-history tbody tr:hover {
+  background-color: #e6f7ff;
+}
