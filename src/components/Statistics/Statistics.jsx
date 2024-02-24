@@ -9,7 +9,9 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className={css.title}>{title}</h2>}
 
       <ul className={css.statList}>
-        <StatisticItem stats={stats} />
+        {stats.map(({ label, percentage, id }) => (
+          <StatisticItem label={label} percentage={percentage} key={id} />
+        ))}
       </ul>
     </section>
   );
